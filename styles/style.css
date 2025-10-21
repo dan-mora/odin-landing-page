@@ -69,6 +69,36 @@ body {
   color: #E5E7EB;
 }
 
+/* === panel two === */
+.panel--two {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-subtext {
+  text-align: center;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+}
+
 /* === panel three === */
 .panel--three { 
   background-color: var(--secondary-color);
@@ -89,13 +119,30 @@ body {
   align-self: flex-end;
 }
 
+/* === panel four === */
 .panel--four {
+  align-items: center;
+  color: var(--white-text)
 }
 
+.action-container {
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+/* === footer === */
 .footer {
   text-align: center;
 }
 
+
+/* === buttons === */
 button {
   width: fit-content;
   padding: 5px 10px;
@@ -105,3 +152,8 @@ button {
   color: var(--white-text)
 
 }
+
+.panel--four button {
+  border: 1px solid white;
+}
+
