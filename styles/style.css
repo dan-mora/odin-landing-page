@@ -1,41 +1,32 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+.header, .header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+.header__links {
+  gap: 10px;
+
+  list-style-type: none;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+.panel {
+  height: 300px;
 }
 
-input, button, textarea, select {
-  font: inherit;
+.panel--one {
+  background-color: pink;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+.panel--two {
+  background-color: yellow;
 }
 
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
+.panel--three { 
+  background-color: green;
 }
 
-#root, #__next {
-  isolation: isolate;
+.panel--four {
+  background-color: cyan;
 }
+
